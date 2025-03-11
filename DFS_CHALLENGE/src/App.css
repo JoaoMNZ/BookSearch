@@ -40,7 +40,7 @@ img{
 
 .form{
     display: grid;
-    grid-template-columns: 0.9fr 0.1fr;
+    grid-template-columns: 1fr 0.1fr;
 }
 
 .input{
@@ -164,4 +164,54 @@ img{
 
 .paginationItem:disabled:hover svg{
     fill: #1A1A1A;
+}
+
+@media (max-width: 850px){
+   .container {
+        padding: 0 20px;
+   }
+   .cardContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        margin: 20px auto 0 auto;
+   }
+    .title{
+        font: 3rem/3.5rem Arial, sans-serif;
+        margin-bottom: 12px;
+    }
+    .subtitle{
+        font: 1.25rem/1.5rem Arial, sans-serif;
+        margin-bottom: 12px;
+    }
+    .input, .button{
+        font: 1rem/1.25rem Arial, sans-serif;
+        padding: 8px;
+    }
+
+    .button svg{
+        width: 26px;
+        height: 26px;
+    }
+
+    .cardContainer{
+        gap: 12px;
+    }
+
+    .card{
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .cardText{
+        font: 1rem/1.25rem Arial, sans-serif;
+    }
+
+    .cardText svg{
+        width: 20px;
+        height: 20px;
+    }
 }
